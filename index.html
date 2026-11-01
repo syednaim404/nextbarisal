@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NextBarisal | Think for Tomorrow</title>
+<meta name="description" content="NextBarisal is a software company in Barishal building web, mobile and cloud products.">
+<link rel="icon" type="image/jpeg" href="assets/img/nextbarisal-fabicon.jpg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top nb-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><img src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="40"></a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-label="Menu">
+      <div class="offcanvas-body align-items-lg-center">
+        <ul class="navbar-nav mx-lg-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home"><i class="fa-solid fa-house me-2 d-lg-none"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services"><i class="fa-solid fa-layer-group me-2 d-lg-none"></i>Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers"><i class="fa-solid fa-tags me-2 d-lg-none"></i>Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery"><i class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews"><i class="fa-solid fa-star me-2 d-lg-none"></i>Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope me-2 d-lg-none"></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0">
+      <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="btn btn-plain" data-bs-toggle="modal" data-bs-target="#loginModal" aria-label="Login"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg><span class="d-none d-sm-inline ms-1">Login</span></button>
+      <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<header id="home">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-blue">Web development</span>
+          <h2 class="hero-title">Websites that win customers</h2>
+          <p class="hero-text">Fast, mobile-friendly business websites built with Laravel and PHP.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-purple">Software</span>
+          <h2 class="hero-title">Custom software for your business</h2>
+          <p class="hero-text">Billing, inventory, HR and school management systems made around the way you work.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-green">Web development</span>
+          <h2 class="hero-title">E-commerce and web apps</h2>
+          <p class="hero-text">Online shops with bKash, Nagad and card payments, plus admin panels and APIs.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-teal">Networking</span>
+          <h2 class="hero-title">Stable office and campus networks</h2>
+          <p class="hero-text">LAN, Wi-Fi, router and server setup with tidy cabling and monitoring.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1557862921-37829c790f19?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-red">CCTV camera</span>
+          <h2 class="hero-title">Watch over your place, day and night</h2>
+          <p class="hero-text">HD cameras with night vision and live view on your phone.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-blue">Our office</span>
+          <h2 class="hero-title">Where your ideas become products</h2>
+          <p class="hero-text">Our team plans, designs and builds under one roof in Barishal.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-purple">Developers</span>
+          <h2 class="hero-title">Code written with care</h2>
+          <p class="hero-text">Clean, secure and well-tested code from our in-house developers.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-teal">Technology</span>
+          <h2 class="hero-title">Technology that grows with you</h2>
+          <p class="hero-text">Modern tools and hosting chosen to fit your budget and your plans.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-red">CCTV camera</span>
+          <h2 class="hero-title">Security you can see</h2>
+          <p class="hero-text">Cameras, a DVR and remote viewing for homes, shops and offices.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-green">Our office</span>
+          <h2 class="hero-title">People who listen first</h2>
+          <p class="hero-text">Planners, designers and developers working together on your project.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-yellow">Developers</span>
+          <h2 class="hero-title">Built for real businesses</h2>
+          <p class="hero-text">From billing to school portals, we build tools your staff will actually use.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-teal">Cloud &amp; hosting</span>
+          <h2 class="hero-title">Fast, safe hosting</h2>
+          <p class="hero-text">Servers, backups and monitoring so your website stays online.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-red">Security</span>
+          <h2 class="hero-title">Protect your business online</h2>
+          <p class="hero-text">Secure code and regular updates to keep your website and data safe.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-green">Mobile apps</span>
+          <h2 class="hero-title">Apps for Android and iOS</h2>
+          <p class="hero-text">Flutter and native apps that work offline and on everyday phones.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=70')"></div>
+        <div class="hero-wrap"><div class="container">
+          <span class="chip c-blue">Software</span>
+          <h2 class="hero-title">Software that saves time</h2>
+          <p class="hero-text">Dashboards, billing and reports that give you a clear view of your business.</p>
+          <div class="d-flex flex-wrap gap-2"><a href="#contact" class="btn btn-nb">Get a quote</a><a href="#services" class="btn btn-ghost">Our services</a></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- SERVICES -->
+<section id="services" class="py-6">
+  <div class="container">
+    <div class="head"><h2>What we build</h2><p>From first sketch to live server, one team handles the whole job.</p></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-red"><i class="fa-brands fa-laravel"></i><h3><a href="#contact" class="stretched-link">Web applications</a></h3><p>Secure Laravel and PHP platforms with admin panels, roles and REST APIs.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-green"><i class="fa-solid fa-mobile-screen-button"></i><h3><a href="#contact" class="stretched-link">Mobile apps</a></h3><p>Flutter and native apps for Android and iOS, with offline support.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-blue"><i class="fa-solid fa-cart-shopping"></i><h3><a href="#contact" class="stretched-link">E-commerce</a></h3><p>Online shops with bKash, Nagad and card payments plus courier tracking.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-yellow"><i class="fa-solid fa-palette"></i><h3><a href="#contact" class="stretched-link">UI/UX design</a></h3><p>Wireframes, prototypes and design systems tested with real users.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-purple"><i class="fa-solid fa-cloud"></i><h3><a href="#contact" class="stretched-link">Cloud &amp; DevOps</a></h3><p>Deployments, backups and monitoring on AWS, DigitalOcean or your own server.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-red"><i class="fa-solid fa-laptop"></i><h3><a href="#contact" class="stretched-link">Reconditioned laptop sale</a></h3><p>Tested and refurbished laptops for office, study and home use at friendly prices.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-teal"><i class="fa-solid fa-headset"></i><h3><a href="#contact" class="stretched-link">Support &amp; maintenance</a></h3><p>Bug fixes, updates and a response within one working day.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-purple"><i class="fa-solid fa-video"></i><h3><a href="#contact" class="stretched-link">CCTV camera setup</a></h3><p>HD cameras with night vision, a DVR and live view on your phone, installed and set up for you.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-yellow"><i class="fa-solid fa-network-wired"></i><h3><a href="#contact" class="stretched-link">Networking</a></h3><p>LAN, Wi-Fi and router setup for offices, shops and campuses, with tidy cabling.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-blue"><i class="fa-brands fa-facebook"></i><h3><a href="#contact" class="stretched-link">Facebook ads</a></h3><p>Targeted Facebook and Instagram ad campaigns that bring local customers to your page and shop.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-green"><i class="fa-solid fa-user-graduate"></i><h3><a href="#contact" class="stretched-link">Internship</a></h3><p>Hands-on training in web development and design for students, working on real projects.</p></article></div>
+      <div class="col-md-6 col-lg-4"><article class="card-nb s-red"><i class="fa-solid fa-server"></i><h3><a href="#contact" class="stretched-link">Domain &amp; hosting</a></h3><p>Domain registration, fast web hosting, SSL and email setup for your website.</p></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3"><div class="stat s-red"><i class="fa-solid fa-diagram-project"></i><b data-count="120">0</b><span>Projects delivered</span></div></div>
+      <div class="col-6 col-md-3"><div class="stat s-green"><i class="fa-solid fa-users"></i><b data-count="65">0</b><span>Happy clients</span></div></div>
+      <div class="col-6 col-md-3"><div class="stat s-blue"><i class="fa-solid fa-user-gear"></i><b data-count="28">0</b><span>Engineers &amp; designers</span></div></div>
+      <div class="col-6 col-md-3"><div class="stat s-yellow"><i class="fa-solid fa-calendar-check"></i><b data-count="9">0</b><span>Years in business</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers" class="py-6 offers">
+  <div class="container">
+    <div class="head d-flex justify-content-between align-items-end flex-wrap gap-3">
+      <div><h2>Special offers</h2><p>Website, CCTV camera, software and reconditioned laptop offers at limited-time prices. Offers end on 30 November 2026.</p></div>
+      <div><button class="btn btn-icon" id="offerPrev" aria-label="Previous offers"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="btn btn-icon" id="offerNext" aria-label="Next offers"><i class="fa-solid fa-arrow-right"></i></button></div>
+    </div>
+    <div class="slider offer-slider" id="offerSlider">
+<article class="offer s-red">
+        <span class="off-badge">40% OFF</span>
+        <i class="fa-solid fa-globe o-ico"></i>
+        <h3>Business website</h3>
+        <div class="price"><s>৳25,000</s><b>৳15,000</b></div>
+        <ul><li><i class="fa-solid fa-check"></i>5 responsive pages</li><li><i class="fa-solid fa-check"></i>Free domain and hosting for 1 year</li><li><i class="fa-solid fa-check"></i>Admin panel to edit content</li><li><i class="fa-solid fa-check"></i>Contact form and basic SEO</li></ul>
+        <a href="#contact" class="btn btn-offer w-100">Get this offer</a>
+      </article>
+<article class="offer s-green">
+        <span class="off-badge">Save ৳6,000</span>
+        <i class="fa-solid fa-video o-ico"></i>
+        <h3>CCTV camera setup</h3>
+        <div class="price"><s>৳28,000</s><b>৳22,000</b></div>
+        <ul><li><i class="fa-solid fa-check"></i>4 HD cameras with night vision</li><li><i class="fa-solid fa-check"></i>1 TB DVR for recordings</li><li><i class="fa-solid fa-check"></i>Live view on your phone</li><li><i class="fa-solid fa-check"></i>Free installation, 1-year warranty</li></ul>
+        <a href="#contact" class="btn btn-offer w-100">Get this offer</a>
+      </article>
+<article class="offer s-blue">
+        <span class="off-badge">Free UI design</span>
+        <i class="fa-solid fa-laptop-code o-ico"></i>
+        <h3>Software design &amp; development</h3>
+        <div class="price"><s></s><b>From ৳50,000</b></div>
+        <ul><li><i class="fa-solid fa-check"></i>UI/UX design included</li><li><i class="fa-solid fa-check"></i>Laravel and MySQL development</li><li><i class="fa-solid fa-check"></i>Full source code handover</li><li><i class="fa-solid fa-check"></i>3 months free support</li></ul>
+        <a href="#contact" class="btn btn-offer w-100">Get this offer</a>
+      </article>
+<article class="offer s-purple">
+        <span class="off-badge">Budget friendly</span>
+        <i class="fa-solid fa-laptop o-ico"></i>
+        <h3>Reconditioned laptop sale</h3>
+        <div class="price"><s></s><b>Ask for price</b></div>
+        <ul><li><i class="fa-solid fa-check"></i>Tested and cleaned before sale</li><li><i class="fa-solid fa-check"></i>Good for office, study and home use</li><li><i class="fa-solid fa-check"></i>Windows and software setup on request</li><li><i class="fa-solid fa-check"></i>Help and support from our team</li></ul>
+        <a href="#contact" class="btn btn-offer w-100">Get this offer</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS CARD SLIDER -->
+<section id="projects" class="py-6 alt">
+  <div class="container">
+    <div class="head d-flex justify-content-between align-items-end flex-wrap gap-3">
+      <div><h2>Recent projects</h2><p>A few products we have launched lately.</p></div>
+      <div><button class="btn btn-icon" id="prevBtn" aria-label="Previous projects"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="btn btn-icon" id="nextBtn" aria-label="Next projects"><i class="fa-solid fa-arrow-right"></i></button></div>
+    </div>
+    <div class="slider" id="slider">
+      <article class="proj"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=70" alt="School management dashboard" loading="lazy"><div><span class="chip c-red">Laravel</span><h3>School Manager</h3><p>Admissions, results and fee collection for 40+ schools.</p></div></article>
+      <article class="proj"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=70" alt="Hospital software" loading="lazy"><div><span class="chip c-green">Healthcare</span><h3>ClinicDesk</h3><p>Appointments, prescriptions and lab reports in one place.</p></div></article>
+      <article class="proj"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&q=70" alt="Shop platform" loading="lazy"><div><span class="chip c-blue">E-commerce</span><h3>BazarGhor</h3><p>Multi-vendor marketplace with live order tracking.</p></div></article>
+      <article class="proj"><img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&q=70" alt="Delivery app" loading="lazy"><div><span class="chip c-yellow">Flutter</span><h3>RiverRide</h3><p>Launch booking and ticketing app for river transport.</p></div></article>
+      <article class="proj"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=700&q=70" alt="Accounting system" loading="lazy"><div><span class="chip c-purple">ERP</span><h3>HisabKitab</h3><p>Accounts, stock and payroll for small manufacturers.</p></div></article>
+      <article class="proj"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=70" alt="Team portal" loading="lazy"><div><span class="chip c-teal">SaaS</span><h3>TeamPulse</h3><p>Attendance and task tracking for remote teams.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- WEBSITES BUILT -->
+<section id="websites" class="py-6">
+  <div class="container">
+    <div class="head text-center"><h2>Websites and software we built</h2><p>Pick a category to see everything we have developed for it.</p></div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><article class="cat s-red">
+        <div class="s-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>School &amp; College Management Website</h3>
+        <a class="go stretched-link" href="websites.html?type=school">Discover all school &amp; college websites we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-green">
+        <div class="s-ico"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>E-commerce Website</h3>
+        <a class="go stretched-link" href="websites.html?type=ecommerce">Discover all e-commerce websites we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-blue">
+        <div class="s-ico"><i class="fa-solid fa-user-doctor"></i></div>
+        <h3>Doctor Portfolio Website</h3>
+        <a class="go stretched-link" href="websites.html?type=doctor">Discover all doctor portfolio websites we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-yellow">
+        <div class="s-ico"><i class="fa-solid fa-hotel"></i></div>
+        <h3>Hotel Management Software</h3>
+        <a class="go stretched-link" href="websites.html?type=hotel">Discover all hotel software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-purple">
+        <div class="s-ico"><i class="fa-solid fa-utensils"></i></div>
+        <h3>Restaurant Management Software</h3>
+        <a class="go stretched-link" href="websites.html?type=restaurant">Discover all restaurant software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-teal">
+        <div class="s-ico"><i class="fa-solid fa-pills"></i></div>
+        <h3>Pharmacy Management Software</h3>
+        <a class="go stretched-link" href="websites.html?type=pharmacy">Discover all pharmacy software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-red">
+        <div class="s-ico"><i class="fa-solid fa-hospital"></i></div>
+        <h3>Hospital &amp; Clinic Software</h3>
+        <a class="go stretched-link" href="websites.html?type=hospital">Discover all hospital &amp; clinic software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-green">
+        <div class="s-ico"><i class="fa-solid fa-building"></i></div>
+        <h3>Real Estate Website</h3>
+        <a class="go stretched-link" href="websites.html?type=realestate">Discover all real estate websites we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-blue">
+        <div class="s-ico"><i class="fa-solid fa-plane-departure"></i></div>
+        <h3>Travel &amp; Tours Website</h3>
+        <a class="go stretched-link" href="websites.html?type=travel">Discover all travel &amp; tours websites we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-yellow">
+        <div class="s-ico"><i class="fa-solid fa-dumbbell"></i></div>
+        <h3>Gym &amp; Fitness Management</h3>
+        <a class="go stretched-link" href="websites.html?type=gym">Discover all gym &amp; fitness software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-purple">
+        <div class="s-ico"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>Courier &amp; Logistics Software</h3>
+        <a class="go stretched-link" href="websites.html?type=courier">Discover all courier &amp; logistics software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+      <div class="col-md-6 col-lg-4"><article class="cat s-teal">
+        <div class="s-ico"><i class="fa-solid fa-calculator"></i></div>
+        <h3>Accounts &amp; Inventory (ERP) Software</h3>
+        <a class="go stretched-link" href="websites.html?type=accounts">Discover all accounts &amp; inventory software we developed <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+      </article></div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="stack" class="py-5">
+  <div class="container"><div class="head text-center mb-4"><h2>Tools we use every day</h2></div></div>
+  <div class="marquee" data-speed="45"><div class="track">
+<div class="tool"><i class="fa-brands fa-laravel" style="color:#ff2d20"></i><span>Laravel</span></div>
+<div class="tool"><i class="fa-brands fa-php" style="color:#8892bf"></i><span>PHP</span></div>
+<div class="tool"><i class="fa-brands fa-js" style="color:#f7df1e"></i><span>JavaScript</span></div>
+<div class="tool"><i class="fa-brands fa-react" style="color:#61dafb"></i><span>React</span></div>
+<div class="tool"><i class="fa-brands fa-vuejs" style="color:#42b883"></i><span>Vue.js</span></div>
+<div class="tool"><i class="fa-brands fa-node-js" style="color:#68a063"></i><span>Node.js</span></div>
+<div class="tool"><i class="fa-brands fa-python" style="color:#4b8bbe"></i><span>Python</span></div>
+<div class="tool"><i class="fa-brands fa-java" style="color:#f89820"></i><span>Java</span></div>
+<div class="tool"><i class="fa-brands fa-angular" style="color:#dd0031"></i><span>Angular</span></div>
+<div class="tool"><i class="fa-brands fa-html5" style="color:#e34f26"></i><span>HTML5</span></div>
+<div class="tool"><i class="fa-brands fa-css3-alt" style="color:#2d9cdb"></i><span>CSS3</span></div>
+<div class="tool"><i class="fa-brands fa-sass" style="color:#cc6699"></i><span>Sass</span></div>
+<div class="tool"><i class="fa-brands fa-bootstrap" style="color:#a46bf5"></i><span>Bootstrap</span></div>
+<div class="tool"><i class="fa-solid fa-database" style="color:#00a3e0"></i><span>MySQL</span></div>
+<div class="tool"><i class="fa-brands fa-git-alt" style="color:#f05032"></i><span>Git</span></div>
+<div class="tool"><i class="fa-brands fa-docker" style="color:#2496ed"></i><span>Docker</span></div>
+<div class="tool"><i class="fa-brands fa-aws" style="color:#ff9900"></i><span>AWS</span></div>
+<div class="tool"><i class="fa-brands fa-android" style="color:#3ddc84"></i><span>Android</span></div>
+<div class="tool"><i class="fa-brands fa-wordpress" style="color:#3aa0d6"></i><span>WordPress</span></div>
+<div class="tool"><i class="fa-brands fa-figma" style="color:#f24e1e"></i><span>Figma</span></div>
+<div class="tool"><i class="fa-brands fa-linux" style="color:#fcc624"></i><span>Linux</span></div>
+  </div></div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-6">
+  <div class="container">
+    <div class="head text-center"><h2>Gallery</h2><p>Life at the NextBarisal office, events and client meetings.</p></div>
+    <div class="gallery">
+<button class="g-item big" data-full="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1400&q=70" aria-label="Open photo 1"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=70" alt="NextBarisal office photo 1" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item " data-full="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=70" aria-label="Open photo 2"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=70" alt="NextBarisal office photo 2" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item " data-full="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1400&q=70" aria-label="Open photo 3"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=70" alt="NextBarisal office photo 3" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item wide" data-full="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1400&q=70" aria-label="Open photo 4"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=70" alt="NextBarisal office photo 4" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item " data-full="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=70" aria-label="Open photo 5"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=70" alt="NextBarisal office photo 5" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item " data-full="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=70" aria-label="Open photo 6"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=70" alt="NextBarisal office photo 6" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item " data-full="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1400&q=70" aria-label="Open photo 7"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=70" alt="NextBarisal office photo 7" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+<button class="g-item " data-full="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=70" aria-label="Open photo 8"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=70" alt="NextBarisal office photo 8" loading="lazy"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" class="py-5 alt">
+  <div class="container"><div class="head text-center mb-4"><h2>Trusted by local businesses</h2></div></div>
+  <div class="marquee rev" data-speed="35"><div class="track">
+<div class="client"><i class="fa-solid fa-ship"></i><span>Sundarban Traders</span></div>
+<div class="client"><i class="fa-solid fa-shirt"></i><span>Kirtankhola Fashion</span></div>
+<div class="client"><i class="fa-solid fa-hospital"></i><span>Barishal Care Hospital</span></div>
+<div class="client"><i class="fa-solid fa-school"></i><span>River Valley School</span></div>
+<div class="client"><i class="fa-solid fa-utensils"></i><span>Green Delta Foods</span></div>
+<div class="client"><i class="fa-solid fa-truck-fast"></i><span>Padma Logistics</span></div>
+<div class="client"><i class="fa-solid fa-building-columns"></i><span>Coastal Bank</span></div>
+<div class="client"><i class="fa-solid fa-store"></i><span>Swapno Mart</span></div>
+  </div></div>
+</section>
+
+<!-- BLOG SLIDER -->
+<section id="blog" class="py-6 offers">
+  <div class="container">
+    <div class="head d-flex justify-content-between align-items-end flex-wrap gap-3">
+      <div><h2>Latest from our blog</h2><p>Tips and notes from the team.</p></div>
+      <div><button class="btn btn-icon" id="blogPrev" aria-label="Previous articles"><i class="fa-solid fa-arrow-left"></i></button> <button class="btn btn-icon" id="blogNext" aria-label="Next articles"><i class="fa-solid fa-arrow-right"></i></button></div>
+    </div>
+    <div class="slider" id="blogSlider">
+<article class="proj sm"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=70" alt="" loading="lazy"><div><small class="date"><i class="fa-regular fa-calendar me-1"></i>29 Oct 2026</small><h3>Why Laravel is still our first choice in 2026</h3><a href="#" class="more">Read more <i class="fa-solid fa-arrow-right-long"></i></a></div></article>
+<article class="proj sm"><img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&q=70" alt="" loading="lazy"><div><small class="date"><i class="fa-regular fa-calendar me-1"></i>21 Oct 2026</small><h3>5 mistakes small shops make with online payments</h3><a href="#" class="more">Read more <i class="fa-solid fa-arrow-right-long"></i></a></div></article>
+<article class="proj sm"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=70" alt="" loading="lazy"><div><small class="date"><i class="fa-regular fa-calendar me-1"></i>14 Oct 2026</small><h3>Keep your business website safe: a simple checklist</h3><a href="#" class="more">Read more <i class="fa-solid fa-arrow-right-long"></i></a></div></article>
+<article class="proj sm"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=70" alt="" loading="lazy"><div><small class="date"><i class="fa-regular fa-calendar me-1"></i>06 Oct 2026</small><h3>How we plan a mobile app in two weeks</h3><a href="#" class="more">Read more <i class="fa-solid fa-arrow-right-long"></i></a></div></article>
+<article class="proj sm"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=70" alt="" loading="lazy"><div><small class="date"><i class="fa-regular fa-calendar me-1"></i>30 Sep 2026</small><h3>Choosing between Flutter and native apps</h3><a href="#" class="more">Read more <i class="fa-solid fa-arrow-right-long"></i></a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS CAROUSEL -->
+<section id="reviews" class="py-6 alt">
+  <div class="container">
+    <div class="head text-center"><h2>What clients say</h2></div>
+    <div id="reviewCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:760px">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><blockquote class="review"><div class="stars">★★★★★</div><p>They rebuilt our billing system in ten weeks. Collections are up and nobody calls us about errors anymore.</p><footer><img src="https://i.pravatar.cc/80?img=12" alt=""><span class="who">Rafiq Ahmed, Director, Sundarban Traders</span><span class="vias"><span class="via via-fb" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></span><span class="via via-ig" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span><span class="via via-tw" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></span><span class="via via-wa" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></span></span></footer></blockquote></div>
+        <div class="carousel-item"><blockquote class="review"><div class="stars">★★★★★</div><p>Clear updates every week and a mobile app that works on cheap phones too. Very happy.</p><footer><img src="https://i.pravatar.cc/80?img=47" alt=""><span class="who">Nusrat Jahan, Founder, Kirtankhola Fashion</span><span class="vias"><span class="via via-fb" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></span><span class="via via-ig" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span><span class="via via-tw" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></span><span class="via via-wa" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></span></span></footer></blockquote></div>
+        <div class="carousel-item"><blockquote class="review"><div class="stars">★★★★☆</div><p>Professional team that answers fast. Our hospital moved from paper to software without a single day of downtime.</p><footer><img src="https://i.pravatar.cc/80?img=33" alt=""><span class="who">Dr. Mahbub Alam, Barishal Care Hospital</span><span class="vias"><span class="via via-fb" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></span><span class="via via-ig" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span><span class="via via-tw" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></span><span class="via via-wa" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></span></span></footer></blockquote></div>
+        <div class="carousel-item"><blockquote class="review"><div class="stars">★★★★★</div><p>Our school portal is easy for teachers and parents. Results and notices now reach everyone on time.</p><footer><img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""><span class="who">Md. Kamal Hossain, Principal, Riverside Model School</span><span class="vias"><span class="via via-fb" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></span><span class="via via-ig" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span><span class="via via-tw" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></span><span class="via via-wa" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></span></span></footer></blockquote></div>
+        <div class="carousel-item"><blockquote class="review"><div class="stars">★★★★★</div><p>Fair price and honest advice. The CCTV setup was finished in one day and live view on my phone works perfectly.</p><footer><img src="https://randomuser.me/api/portraits/women/44.jpg" alt=""><span class="who">Tania Akter, Owner, Barishal Boutique House</span><span class="vias"><span class="via via-fb" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></span><span class="via via-ig" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span><span class="via via-tw" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></span><span class="via via-wa" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></span></span></footer></blockquote></div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-icon" data-bs-target="#reviewCarousel" data-bs-slide="prev" aria-label="Previous review"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="btn btn-icon" data-bs-target="#reviewCarousel" data-bs-slide="next" aria-label="Next review"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-6">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="head"><h2>Tell us what you need</h2><p>Send a short note. We reply within one working day.</p></div>
+        <ul class="list-unstyled contact-list">
+          <li><svg class="ic s-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Sadar Road, Barishal 8200, Bangladesh</li>
+          <li><svg class="ic s-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +880 1700-000000</li>
+          <li><svg class="ic s-blue" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@nextbarisal.com</li>
+          <li><svg class="ic s-yellow" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Sat–Thu, 9:00 am – 6:00 pm</li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <div class="mapwrap mb-3"><iframe title="Barishal map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=90.33%2C22.68%2C90.40%2C22.73&layer=mapnik"></iframe></div>
+        <form id="contactForm" class="row g-3" novalidate>
+          <div class="col-md-6"><input class="form-control" placeholder="Your name" required></div>
+          <div class="col-md-6"><input type="email" class="form-control" placeholder="Email address" required></div>
+          <div class="col-12"><textarea class="form-control" rows="4" placeholder="What are you building?" required></textarea></div>
+          <div class="col-12"><button class="btn btn-send">Send message</button> <span id="formMsg" class="ms-2"></span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container">
+    <div class="row g-4 foot-top">
+      <div class="col-sm-6 col-lg-3">
+        <img src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="36">
+        <p class="mt-3">We design and build web, mobile and cloud software for growing businesses in Bangladesh.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h4>Quick links</h4>
+        <ul class="list-unstyled">
+          <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li>
+          <li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h4>Services</h4>
+        <ul class="list-unstyled">
+          <li><a href="#services">Web applications</a></li><li><a href="#services">Mobile apps</a></li><li><a href="#services">E-commerce</a></li>
+          <li><a href="#services">UI/UX design</a></li><li><a href="#services">Cloud &amp; DevOps</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h4>Contact</h4>
+        <ul class="list-unstyled">
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Sadar Road, Barishal 8200</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +880 1700-000000</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@nextbarisal.com</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Sat–Thu, 9 am – 6 pm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container"><hr class="foot-hr"></div>
+  <div class="copy">
+    <div class="container d-flex flex-wrap justify-content-center text-center gap-2 gap-md-3">
+      <span>&copy; <span id="yr"></span> NextBarisal. All rights reserved.</span>
+      <span>Think for tomorrow.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="loginTitle">Login to NextBarisal</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <form id="loginForm" class="modal-body" novalidate>
+      <div class="mb-3"><label class="form-label" for="lEmail">Email</label><input type="email" id="lEmail" class="form-control" placeholder="you@example.com" required></div>
+      <div class="mb-3"><label class="form-label" for="lPass">Password</label><input type="password" id="lPass" class="form-control" placeholder="Your password" required></div>
+      <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="lRem"><label class="form-check-label" for="lRem">Remember me</label></div>
+      <button class="btn btn-nb w-100">Login</button>
+      <div id="loginMsg" class="mt-3 small"></div>
+    </form>
+  </div></div>
+</div>
+
+<div class="modal fade" id="lightbox" tabindex="-1" aria-label="Photo viewer" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0">
+    <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal" aria-label="Close"></button>
+    <img id="lightImg" class="img-fluid rounded-3" alt="">
+  </div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

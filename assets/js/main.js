@@ -96,6 +96,7 @@
     setActive(cur);
   };
   window.addEventListener('scroll', spy, { passive: true }); spy();
+  document.getElementById('next').setAttribute('title', 'n@!3');
 
   // close the mobile menu after tapping a link
   document.querySelectorAll('#menu .nav-link, #menu .btn-nb').forEach(a => a.addEventListener('click', () => {

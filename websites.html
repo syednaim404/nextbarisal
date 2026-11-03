@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School &amp; College websites | NextBarisal</title>
+  <meta name="description" content="Websites and software developed by NextBarisal.">
+  <link rel="icon" type="image/jpeg" href="assets/img/nextbarisal-fabicon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script>try{var t=localStorage.getItem('nb-theme');if(t)document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top nb-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="40"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="40"></a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-label="Menu">
+        <div class="offcanvas-body align-items-lg-center">
+          <ul class="navbar-nav mx-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2 d-lg-none"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html" aria-current="page"><i class="fa-solid fa-layer-group me-2 d-lg-none"></i>Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fa-solid fa-tags me-2 d-lg-none"></i>Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info me-2 d-lg-none"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope me-2 d-lg-none"></i>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0">
+        <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="btn btn-plain btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-hero ph-blue">
+    <div class="container">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li><a href="index.html#websites">Websites we built</a></li><li aria-current="page">School &amp; College</li></ol>
+      <span class="chip c-blue">Websites we built</span>
+      <h1>School &amp; College Management Website</h1>
+      <p>Admission, results, notices and student portals for schools and colleges.</p>
+    </div>
+  </header>
+
+
+  <main class="py-6">
+    <div class="container">
+      <p class="text-muted mb-4">Click a link to open the live website.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="site s-red">
+            <div class="s-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>River Valley School</h3>
+              <div class="addr"><i class="fa-solid fa-location-dot me-1"></i>Barishal Sadar</div>
+              <a class="url" href="https://rivervalley.example.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe me-1"></i>rivervalley.example.com<i class="fa-solid fa-arrow-up-right-from-square ms-1 small"></i></a>
+              <p>Online admission, notice board and result search.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="site s-red">
+            <div class="s-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Kirtankhola Model College</h3>
+              <div class="addr"><i class="fa-solid fa-location-dot me-1"></i>Barishal</div>
+              <a class="url" href="https://kirtankhola-college.example.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe me-1"></i>kirtankhola-college.example.com<i class="fa-solid fa-arrow-up-right-from-square ms-1 small"></i></a>
+              <p>Student portal, class routine and fee records.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="site s-red">
+            <div class="s-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Barishal Collegiate Academy</h3>
+              <div class="addr"><i class="fa-solid fa-location-dot me-1"></i>Barishal</div>
+              <a class="url" href="https://bca.example.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe me-1"></i>bca.example.com<i class="fa-solid fa-arrow-up-right-from-square ms-1 small"></i></a>
+              <p>Teacher panel, attendance and exam results.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="site s-red">
+            <div class="s-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Sundarban Public School</h3>
+              <div class="addr"><i class="fa-solid fa-location-dot me-1"></i>Patuakhali</div>
+              <a class="url" href="https://sundarban-school.example.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe me-1"></i>sundarban-school.example.com<i class="fa-solid fa-arrow-up-right-from-square ms-1 small"></i></a>
+              <p>Admission form and SMS notice system.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-box">
+        <div>
+          <h2>Want a website like these?</h2>
+          <p>Tell us what you need. We reply within one working day.</p>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-nb" href="contact.html">Contact us</a>
+          <a class="btn btn-ghost" href="tel:+8801718928077"><i class="fa-solid fa-phone me-2"></i>+880 1718-928077</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="container">
+      <div class="row g-4 foot-top">
+        <div class="col-sm-6 col-lg-3">
+          <img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="36"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="36">
+          <p class="mt-3">We design and build web, mobile and cloud software for growing businesses in Bangladesh.</p>
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4>Quick links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4>Services</h4>
+          <ul class="list-unstyled">
+            <li><a href="service-details.html?id=web-applications">Web applications</a></li>
+            <li><a href="service-details.html?id=mobile-apps">Mobile apps</a></li>
+            <li><a href="service-details.html?id=e-commerce">E-commerce</a></li>
+            <li><a href="service-details.html?id=cctv-camera-setup">CCTV camera setup</a></li>
+            <li><a href="service-details.html?id=domain-hosting">Domain &amp; hosting</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-location-dot"></i> Fokir Bari Rd, Barishal, Bangladesh</li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+8801718928077">+880 1718-928077</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:nextbarisal@gmail.com">nextbarisal@gmail.com</a></li>
+            <li><i class="fa-solid fa-clock"></i> Sat–Thu, 10:00 am – 6:00 pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr class="foot-hr">
+    </div>
+    <div class="copy">
+      <div class="container d-flex flex-wrap justify-content-center text-center gap-2 gap-md-3">
+        <span id="next">&copy; <span id="yr"></span> All rights reserved | Next Barisal</span>
+      </div>
+    </div>
+  </footer>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="loginTitle">Login to NextBarisal</h2><button type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="loginForm" class="modal-body" novalidate>
+          <div class="mb-3"><label class="form-label" for="lEmail">Email</label><input type="email" id="lEmail"
+              class="form-control" placeholder="you@example.com" required></div>
+          <div class="mb-3"><label class="form-label" for="lPass">Password</label><input type="password" id="lPass"
+              class="form-control" placeholder="Your password" required></div>
+          <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="lRem"><label
+              class="form-check-label" for="lRem">Remember me</label></div>
+          <button class="btn btn-nb w-100">Login</button>
+          <div id="loginMsg" class="mt-3 small"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

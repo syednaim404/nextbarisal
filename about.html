@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | NextBarisal</title>
+  <meta name="description" content="About NextBarisal, a software company in Barishal building web, mobile and cloud products.">
+  <link rel="icon" type="image/jpeg" href="assets/img/nextbarisal-fabicon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script>try{var t=localStorage.getItem('nb-theme');if(t)document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top nb-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="40"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="40"></a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-label="Menu">
+        <div class="offcanvas-body align-items-lg-center">
+          <ul class="navbar-nav mx-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2 d-lg-none"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa-solid fa-layer-group me-2 d-lg-none"></i>Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fa-solid fa-tags me-2 d-lg-none"></i>Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page"><i class="fa-solid fa-circle-info me-2 d-lg-none"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope me-2 d-lg-none"></i>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0">
+        <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="btn btn-plain btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-hero ph-teal">
+    <div class="container">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">About</li></ol>
+      <span class="chip c-teal">About NextBarisal</span>
+      <h1>A Barishal company that builds for real businesses</h1>
+      <p>Software, security cameras, networks and hosting from a local team you can meet, call and trust.</p>
+    </div>
+  </header>
+
+  <section class="py-6">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 about-img">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=70" alt="The NextBarisal team working together" loading="lazy">
+        </div>
+        <div class="col-lg-6 about-text">
+          <span class="chip c-blue">Who we are</span>
+          <h2 class="mt-3">Technology that is simple, reliable and affordable</h2>
+          <p class="text-body-secondary">NextBarisal designs and builds web, mobile and cloud software for growing businesses in Bangladesh. We also set up the everyday technology a business needs: CCTV cameras, office networks, domains and hosting, and reconditioned laptops.</p>
+          <p class="text-body-secondary">Our office is on Fokir Bari Road in Barishal, so you can always visit us, call us or send a message and talk to a real person.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check"></i>Clear updates in plain language, no jargon</li>
+            <li><i class="fa-solid fa-circle-check"></i>Prices agreed with you before we start</li>
+            <li><i class="fa-solid fa-circle-check"></i>Help is available after launch</li>
+          </ul>
+          <a class="btn btn-nb mt-3" href="contact.html">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats pt">
+    <div class="container">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat s-red"><i class="fa-solid fa-diagram-project"></i><b data-count="978">0</b><span>Projects
+              delivered</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat s-green"><i class="fa-solid fa-users"></i><b data-count="645">0</b><span>Happy clients</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat s-blue"><i class="fa-solid fa-user-gear"></i><b data-count="28">0</b><span>Engineers &amp;
+              developer</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat s-yellow"><i class="fa-solid fa-calendar-check"></i><b data-count="14">0</b><span>Years in
+              business</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 alt">
+    <div class="container">
+      <div class="head text-center">
+        <h2>What drives us</h2>
+        <p>The ideas behind every project we take on.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4"><article class="card-nb s-blue"><i class="fa-solid fa-bullseye"></i><h3>Our mission</h3><p>Help local businesses grow with technology that is simple, reliable and affordable.</p></article></div>
+        <div class="col-md-4"><article class="card-nb s-green"><i class="fa-solid fa-eye"></i><h3>Our vision</h3><p>A Bangladesh where every business, big or small, can work and sell online with confidence.</p></article></div>
+        <div class="col-md-4"><article class="card-nb s-yellow"><i class="fa-solid fa-handshake"></i><h3>Our values</h3><p>Honesty, clear communication and work we are proud to put our name on.</p></article></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6">
+    <div class="container">
+      <div class="head text-center">
+        <h2>Why choose NextBarisal</h2>
+        <p>Good reasons to build and grow with us.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><article class="card-nb s-red"><i class="fa-solid fa-location-dot"></i><h3>A local team</h3><p>Based in Barishal, close to the businesses we serve.</p></article></div>
+        <div class="col-md-6 col-lg-3"><article class="card-nb s-purple"><i class="fa-solid fa-layer-group"></i><h3>One partner</h3><p>Software, CCTV, networking and hosting from a single team.</p></article></div>
+        <div class="col-md-6 col-lg-3"><article class="card-nb s-teal"><i class="fa-solid fa-tags"></i><h3>Clear pricing</h3><p>You know the cost before the work begins.</p></article></div>
+        <div class="col-md-6 col-lg-3"><article class="card-nb s-blue"><i class="fa-solid fa-headset"></i><h3>Real support</h3><p>Call or message us and a real person answers.</p></article></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" class="py-5 alt">
+    <div class="container">
+      <div class="head text-center mb-4">
+        <h2>Trusted by local businesses</h2>
+      </div>
+    </div>
+    <div class="marquee rev" data-speed="35">
+      <div class="track">
+        <div class="client"><i class="fa-solid fa-ship"></i><span>Sundarban Traders</span></div>
+        <div class="client"><i class="fa-solid fa-shirt"></i><span>Kirtankhola Fashion</span></div>
+        <div class="client"><i class="fa-solid fa-hospital"></i><span>Barishal Care Hospital</span></div>
+        <div class="client"><i class="fa-solid fa-school"></i><span>River Valley School</span></div>
+        <div class="client"><i class="fa-solid fa-utensils"></i><span>Green Delta Foods</span></div>
+        <div class="client"><i class="fa-solid fa-truck-fast"></i><span>Padma Logistics</span></div>
+        <div class="client"><i class="fa-solid fa-building-columns"></i><span>Coastal Bank</span></div>
+        <div class="client"><i class="fa-solid fa-store"></i><span>Swapno Mart</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-box">
+        <div>
+          <h2>Let us build something together</h2>
+          <p>Share your idea and we will help you plan the next step.</p>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-nb" href="contact.html">Contact us</a>
+          <a class="btn btn-ghost" href="tel:+8801718928077"><i class="fa-solid fa-phone me-2"></i>+880 1718-928077</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="container">
+      <div class="row g-4 foot-top">
+        <div class="col-sm-6 col-lg-3">
+          <img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="36"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="36">
+          <p class="mt-3">We design and build web, mobile and cloud software for growing businesses in Bangladesh.</p>
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4>Quick links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4>Services</h4>
+          <ul class="list-unstyled">
+            <li><a href="service-details.html?id=web-applications">Web applications</a></li>
+            <li><a href="service-details.html?id=mobile-apps">Mobile apps</a></li>
+            <li><a href="service-details.html?id=e-commerce">E-commerce</a></li>
+            <li><a href="service-details.html?id=cctv-camera-setup">CCTV camera setup</a></li>
+            <li><a href="service-details.html?id=domain-hosting">Domain &amp; hosting</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-location-dot"></i> Fokir Bari Rd, Barishal, Bangladesh</li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+8801718928077">+880 1718-928077</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:nextbarisal@gmail.com">nextbarisal@gmail.com</a></li>
+            <li><i class="fa-solid fa-clock"></i> Sat–Thu, 10:00 am – 6:00 pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr class="foot-hr">
+    </div>
+    <div class="copy">
+      <div class="container d-flex flex-wrap justify-content-center text-center gap-2 gap-md-3">
+        <span id="next">&copy; <span id="yr"></span> All rights reserved | Next Barisal</span>
+      </div>
+    </div>
+  </footer>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="loginTitle">Login to NextBarisal</h2><button type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="loginForm" class="modal-body" novalidate>
+          <div class="mb-3"><label class="form-label" for="lEmail">Email</label><input type="email" id="lEmail"
+              class="form-control" placeholder="you@example.com" required></div>
+          <div class="mb-3"><label class="form-label" for="lPass">Password</label><input type="password" id="lPass"
+              class="form-control" placeholder="Your password" required></div>
+          <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="lRem"><label
+              class="form-check-label" for="lRem">Remember me</label></div>
+          <button class="btn btn-nb w-100">Login</button>
+          <div id="loginMsg" class="mt-3 small"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

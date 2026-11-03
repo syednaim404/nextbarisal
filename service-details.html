@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web applications | NextBarisal</title>
-  <meta name="description" content="Custom web applications built by NextBarisal in Barishal: billing, portals, dashboards and admin panels.">
+  <meta name="description"
+    content="Custom web applications built by NextBarisal in Barishal: billing, portals, dashboards and admin panels.">
   <link rel="icon" type="image/jpeg" href="assets/img/nextbarisal-fabicon.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script>try{var t=localStorage.getItem('nb-theme');if(t)document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+  <script>try { var t = localStorage.getItem('nb-theme'); if (t) document.documentElement.setAttribute('data-bs-theme', t) } catch (e) { }</script>
 </head>
 
 <body>
@@ -19,24 +21,35 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top nb-nav">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="40"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="40"></a>
+      <a class="navbar-brand" href="index.html"><img class="logo-light" src="assets/img/nextbarisal-logo.png"
+          alt="NextBarisal" height="40"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png"
+          alt="NextBarisal" height="40"></a>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-label="Menu">
         <div class="offcanvas-body align-items-lg-center">
           <ul class="navbar-nav mx-lg-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2 d-lg-none"></i>Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="services.html" aria-current="page"><i class="fa-solid fa-layer-group me-2 d-lg-none"></i>Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="offers.html"><i class="fa-solid fa-tags me-2 d-lg-none"></i>Offers</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info me-2 d-lg-none"></i>About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope me-2 d-lg-none"></i>Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><i
+                  class="fa-solid fa-house me-2 d-lg-none"></i>Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html" aria-current="page"><i
+                  class="fa-solid fa-layer-group me-2 d-lg-none"></i>Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="offers.html"><i
+                  class="fa-solid fa-tags me-2 d-lg-none"></i>Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html"><i
+                  class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html"><i
+                  class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i
+                  class="fa-solid fa-circle-info me-2 d-lg-none"></i>About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i
+                  class="fa-solid fa-envelope me-2 d-lg-none"></i>Contact</a></li>
           </ul>
         </div>
       </div>
       <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0">
-        <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+        <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i
+            class="fa-solid fa-moon"></i></button>
         <button class="btn btn-plain btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"
+          aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
   </nav>
@@ -44,7 +57,11 @@
   <!-- PAGE HEADER -->
   <header class="page-hero ph-blue">
     <div class="container">
-      <ol class="crumbs"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li id="svcCrumb" aria-current="page">Web applications</li></ol>
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li id="svcCrumb" aria-current="page">Web applications</li>
+      </ol>
       <span class="chip c-blue" id="svcChip">Our service</span>
       <h1 id="svcTitle">Web applications</h1>
       <p id="svcTagline">Custom web apps that your team and your customers will actually use.</p>
@@ -77,69 +94,154 @@
         <div class="col-lg-8 svc-main">
 
           <section class="svc-block">
-            <img id="svcImage" class="svc-cover" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=70" alt="Web applications built by NextBarisal" loading="lazy">
+            <img id="svcImage" class="svc-cover"
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=70"
+              alt="Web applications built by NextBarisal" loading="lazy">
             <h2>Overview</h2>
             <div id="svcOverview">
-              <p>A web application runs in the browser, so your staff and customers can use it from any phone or computer without installing anything. We build billing systems, school and hospital portals, booking tools, dashboards and admin panels around the way your business really works.</p>
-              <p>We start by understanding your process, then design simple screens and build the system in small steps, so you can see the progress every week.</p>
+              <p>A web application runs in the browser, so your staff and customers can use it from any phone or
+                computer without installing anything. We build billing systems, school and hospital portals, booking
+                tools, dashboards and admin panels around the way your business really works.</p>
+              <p>We start by understanding your process, then design simple screens and build the system in small steps,
+                so you can see the progress every week.</p>
             </div>
           </section>
 
           <section class="svc-block">
             <h2>What you get</h2>
             <div class="row g-3" id="svcFeatures">
-            <div class="col-md-6"><div class="feat s-blue"><span class="ico"><i class="fa-solid fa-pen-ruler"></i></span><div><h3>Custom design</h3><p>Screens designed around your workflow, not a generic template.</p></div></div></div>
-            <div class="col-md-6"><div class="feat s-green"><span class="ico"><i class="fa-solid fa-gauge-high"></i></span><div><h3>Admin dashboard</h3><p>Manage users, data and reports from one simple dashboard.</p></div></div></div>
-            <div class="col-md-6"><div class="feat s-yellow"><span class="ico"><i class="fa-solid fa-mobile-screen-button"></i></span><div><h3>Works on every device</h3><p>Runs smoothly on phones, tablets and computers.</p></div></div></div>
-            <div class="col-md-6"><div class="feat s-red"><span class="ico"><i class="fa-solid fa-lock"></i></span><div><h3>Secure login</h3><p>Role-based access, so each person sees only what they should.</p></div></div></div>
-            <div class="col-md-6"><div class="feat s-purple"><span class="ico"><i class="fa-solid fa-chart-line"></i></span><div><h3>Reports and export</h3><p>Clear reports you can print or export when you need them.</p></div></div></div>
-            <div class="col-md-6"><div class="feat s-teal"><span class="ico"><i class="fa-solid fa-puzzle-piece"></i></span><div><h3>Easy to grow</h3><p>Add new features later without rebuilding everything.</p></div></div></div>
+              <div class="col-md-6">
+                <div class="feat s-blue"><span class="ico"><i class="fa-solid fa-pen-ruler"></i></span>
+                  <div>
+                    <h3>Custom design</h3>
+                    <p>Screens designed around your workflow, not a generic template.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat s-green"><span class="ico"><i class="fa-solid fa-gauge-high"></i></span>
+                  <div>
+                    <h3>Admin dashboard</h3>
+                    <p>Manage users, data and reports from one simple dashboard.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat s-yellow"><span class="ico"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                  <div>
+                    <h3>Works on every device</h3>
+                    <p>Runs smoothly on phones, tablets and computers.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat s-red"><span class="ico"><i class="fa-solid fa-lock"></i></span>
+                  <div>
+                    <h3>Secure login</h3>
+                    <p>Role-based access, so each person sees only what they should.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat s-purple"><span class="ico"><i class="fa-solid fa-chart-line"></i></span>
+                  <div>
+                    <h3>Reports and export</h3>
+                    <p>Clear reports you can print or export when you need them.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat s-teal"><span class="ico"><i class="fa-solid fa-puzzle-piece"></i></span>
+                  <div>
+                    <h3>Easy to grow</h3>
+                    <p>Add new features later without rebuilding everything.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
           <section class="svc-block">
             <h2>Technologies we use</h2>
             <div class="tech-row" id="svcTech">
-            <div class="tool"><i class="fa-brands fa-laravel" style="color:#ff2d20"></i><span>Laravel</span></div>
-            <div class="tool"><i class="fa-brands fa-php" style="color:#8892bf"></i><span>PHP</span></div>
-            <div class="tool"><i class="fa-brands fa-js" style="color:#f7df1e"></i><span>JavaScript</span></div>
-            <div class="tool"><i class="fa-brands fa-react" style="color:#61dafb"></i><span>React</span></div>
-            <div class="tool"><i class="fa-brands fa-vuejs" style="color:#42b883"></i><span>Vue.js</span></div>
-            <div class="tool"><i class="fa-solid fa-database" style="color:#4479a1"></i><span>MySQL</span></div>
+              <div class="tool"><i class="fa-brands fa-laravel" style="color:#ff2d20"></i><span>Laravel</span></div>
+              <div class="tool"><i class="fa-brands fa-php" style="color:#8892bf"></i><span>PHP</span></div>
+              <div class="tool"><i class="fa-brands fa-js" style="color:#f7df1e"></i><span>JavaScript</span></div>
+              <div class="tool"><i class="fa-brands fa-react" style="color:#61dafb"></i><span>React</span></div>
+              <div class="tool"><i class="fa-brands fa-vuejs" style="color:#42b883"></i><span>Vue.js</span></div>
+              <div class="tool"><i class="fa-solid fa-database" style="color:#4479a1"></i><span>MySQL</span></div>
             </div>
           </section>
 
           <section class="svc-block">
             <h2>Our process</h2>
             <div id="svcProcess">
-            <div class="row g-4">
-      <div class="col-sm-6"><div class="step s-blue"><span class="n">01</span><h3>Discuss</h3><p>You tell us the goal, the budget and the deadline.</p></div></div>
-      <div class="col-sm-6"><div class="step s-green"><span class="n">02</span><h3>Plan &amp; design</h3><p>We agree the scope, the price and a clear design.</p></div></div>
-      <div class="col-sm-6"><div class="step s-yellow"><span class="n">03</span><h3>Build &amp; test</h3><p>We build in small steps and share progress every week.</p></div></div>
-      <div class="col-sm-6"><div class="step s-red"><span class="n">04</span><h3>Launch &amp; support</h3><p>We go live together and stay available after launch.</p></div></div>
-    </div>
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div class="step s-blue"><span class="n">01</span>
+                    <h3>Discuss</h3>
+                    <p>You tell us the goal, the budget and the deadline.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="step s-green"><span class="n">02</span>
+                    <h3>Plan &amp; design</h3>
+                    <p>We agree the scope, the price and a clear design.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="step s-yellow"><span class="n">03</span>
+                    <h3>Build &amp; test</h3>
+                    <p>We build in small steps and share progress every week.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="step s-red"><span class="n">04</span>
+                    <h3>Launch &amp; support</h3>
+                    <p>We go live together and stay available after launch.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
           <section class="svc-block">
             <h2>Frequently asked questions</h2>
             <div class="accordion" id="svcFaq">
-            <div class="accordion-item">
-              <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq0" aria-expanded="true" aria-controls="faq0">How long does a web application take?</button></h3>
-              <div id="faq0" class="accordion-collapse collapse show" data-bs-parent="#svcFaq"><div class="accordion-body">It depends on the features you need. After we talk, we give you a clear plan with a timeline and a price before any work starts.</div></div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">Will it work on mobile phones?</button></h3>
-              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#svcFaq"><div class="accordion-body">Yes. We design every screen to work on phones, tablets and computers.</div></div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Can new features be added later?</button></h3>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#svcFaq"><div class="accordion-body">Yes. We build it so you can add new features as your business grows.</div></div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Do you help after the launch?</button></h3>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#svcFaq"><div class="accordion-body">Yes. Contact us any time something needs fixing or updating.</div></div>
-            </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq0" aria-expanded="true" aria-controls="faq0">How long does a web application
+                    take?</button></h3>
+                <div id="faq0" class="accordion-collapse collapse show" data-bs-parent="#svcFaq">
+                  <div class="accordion-body">It depends on the features you need. After we talk, we give you a clear
+                    plan with a timeline and a price before any work starts.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">Will it
+                    work on mobile phones?</button></h3>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#svcFaq">
+                  <div class="accordion-body">Yes. We design every screen to work on phones, tablets and computers.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Can new
+                    features be added later?</button></h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#svcFaq">
+                  <div class="accordion-body">Yes. We build it so you can add new features as your business grows.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Do you
+                    help after the launch?</button></h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#svcFaq">
+                  <div class="accordion-body">Yes. Contact us any time something needs fixing or updating.</div>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -151,21 +253,33 @@
             <div class="quote-card">
               <h3>Need this service?</h3>
               <p>Tell us about your project and we will reply within one working day.</p>
-              <a id="svcQuoteBtn" class="btn btn-nb w-100 mb-2" href="contact.html?service=Web%20applications">Get a quote</a>
-              <a class="btn btn-ghost w-100" href="tel:+8801718928077"><i class="fa-solid fa-phone me-2"></i>+880 1718-928077</a>
+              <a id="svcQuoteBtn" class="btn btn-nb w-100 mb-2" href="contact.html?service=Web%20applications">Get a
+                quote</a>
+              <a class="btn btn-ghost w-100" href="tel:+8801718928077"><i class="fa-solid fa-phone me-2"></i>+880
+                1718-928077</a>
             </div>
             <div class="svc-listbox">
               <h3>All services</h3>
               <ul class="list-unstyled svc-list" id="svcSideList">
-              <li><a class="active" href="service-details.html?id=web-applications" data-service-id="web-applications"><i class="fa-solid fa-globe"></i>Web applications</a></li>
-              <li><a href="service-details.html?id=e-commerce" data-service-id="e-commerce"><i class="fa-solid fa-cart-shopping"></i>E-commerce</a></li>
-              <li><a href="service-details.html?id=mobile-apps" data-service-id="mobile-apps"><i class="fa-solid fa-mobile-screen-button"></i>Mobile apps</a></li>
-              <li><a href="service-details.html?id=cctv-camera-setup" data-service-id="cctv-camera-setup"><i class="fa-solid fa-video"></i>CCTV camera setup</a></li>
-              <li><a href="service-details.html?id=domain-hosting" data-service-id="domain-hosting"><i class="fa-solid fa-server"></i>Domain &amp; hosting</a></li>
-              <li><a href="service-details.html?id=networking" data-service-id="networking"><i class="fa-solid fa-network-wired"></i>Networking</a></li>
-              <li><a href="service-details.html?id=reconditioned-laptop-sale" data-service-id="reconditioned-laptop-sale"><i class="fa-solid fa-laptop"></i>Reconditioned laptop sale</a></li>
-              <li><a href="service-details.html?id=facebook-ads" data-service-id="facebook-ads"><i class="fa-brands fa-facebook"></i>Facebook ads</a></li>
-              <li><a href="service-details.html?id=internship" data-service-id="internship"><i class="fa-solid fa-user-graduate"></i>Internship</a></li>
+                <li><a class="active" href="service-details.html?id=web-applications"
+                    data-service-id="web-applications"><i class="fa-solid fa-globe"></i>Web applications</a></li>
+                <li><a href="service-details.html?id=e-commerce" data-service-id="e-commerce"><i
+                      class="fa-solid fa-cart-shopping"></i>E-commerce</a></li>
+                <li><a href="service-details.html?id=mobile-apps" data-service-id="mobile-apps"><i
+                      class="fa-solid fa-mobile-screen-button"></i>Mobile apps</a></li>
+                <li><a href="service-details.html?id=cctv-camera-setup" data-service-id="cctv-camera-setup"><i
+                      class="fa-solid fa-video"></i>CCTV camera setup</a></li>
+                <li><a href="service-details.html?id=domain-hosting" data-service-id="domain-hosting"><i
+                      class="fa-solid fa-server"></i>Domain &amp; hosting</a></li>
+                <li><a href="service-details.html?id=networking" data-service-id="networking"><i
+                      class="fa-solid fa-network-wired"></i>Networking</a></li>
+                <li><a href="service-details.html?id=reconditioned-laptop-sale"
+                    data-service-id="reconditioned-laptop-sale"><i class="fa-solid fa-laptop"></i>Reconditioned laptop
+                    sale</a></li>
+                <li><a href="service-details.html?id=facebook-ads" data-service-id="facebook-ads"><i
+                      class="fa-brands fa-facebook"></i>Facebook ads</a></li>
+                <li><a href="service-details.html?id=internship" data-service-id="internship"><i
+                      class="fa-solid fa-user-graduate"></i>Internship</a></li>
               </ul>
             </div>
           </div>
@@ -196,7 +310,8 @@
     <div class="container">
       <div class="row g-4 foot-top">
         <div class="col-sm-6 col-lg-3">
-          <img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="36"><img class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="36">
+          <img class="logo-light" src="assets/img/nextbarisal-logo.png" alt="NextBarisal" height="36"><img
+            class="logo-dark" src="assets/img/nextbarisal-logo-dark.png" alt="NextBarisal" height="36">
           <p class="mt-3">We design and build web, mobile and cloud software for growing businesses in Bangladesh.</p>
           <div class="social">
             <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -232,7 +347,8 @@
           <ul class="list-unstyled">
             <li><i class="fa-solid fa-location-dot"></i> Fokir Bari Rd, Barishal, Bangladesh</li>
             <li><i class="fa-solid fa-phone"></i> <a href="tel:+8801718928077">+880 1718-928077</a></li>
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:nextbarisal@gmail.com">nextbarisal@gmail.com</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:nextbarisal@gmail.com">nextbarisal@gmail.com</a>
+            </li>
             <li><i class="fa-solid fa-clock"></i> Sat–Thu, 10:00 am – 6:00 pm</li>
           </ul>
         </div>
@@ -248,7 +364,7 @@
     </div>
   </footer>
 
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">

@@ -161,7 +161,8 @@
 
   // ---------- blog details page (blog-details.html?id=<post-id>) ----------
   const POSTS = [
-    { id: 'laravel-first-choice-2026', cat: 'Laravel', date: '29 Oct 2026', read: '4 min read',
+    {
+      id: 'laravel-first-choice-2026', cat: 'Laravel', date: '29 Oct 2026', read: '4 min read',
       title: 'Why Laravel is still our first choice in 2026',
       summary: 'Frameworks come and go. Here is why we keep building client projects on Laravel.',
       img: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=70',
@@ -176,8 +177,10 @@
         'h:What we like most',
         'l:A huge community and lots of ready-made packages|Smooth upgrades from one version to the next|Works well with MySQL, Redis and cheap shared or cloud hosting',
         'If you are planning a web application and want to know whether Laravel fits, send us a message and we will give you an honest answer.'
-      ] },
-    { id: 'online-payment-mistakes', cat: 'E-commerce', date: '21 Oct 2026', read: '5 min read',
+      ]
+    },
+    {
+      id: 'online-payment-mistakes', cat: 'E-commerce', date: '21 Oct 2026', read: '5 min read',
       title: '5 mistakes small shops make with online payments',
       summary: 'Avoid these common problems and your customers will trust your checkout.',
       img: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=70',
@@ -194,8 +197,10 @@
         'h:5. Using a weak admin password',
         'Your order panel holds customer details. Use a strong, unique password and turn on two-step login where possible.',
         'We can set up a secure checkout for your shop, from product pages to payment and order tracking.'
-      ] },
-    { id: 'website-safety-checklist', cat: 'Security', date: '14 Oct 2026', read: '4 min read',
+      ]
+    },
+    {
+      id: 'website-safety-checklist', cat: 'Security', date: '14 Oct 2026', read: '4 min read',
       title: 'Keep your business website safe: a simple checklist',
       summary: 'Ten minutes with this list can prevent most common website problems.',
       img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=70',
@@ -208,8 +213,10 @@
         'h:If something looks wrong',
         'Change your passwords first, then contact your developer. The sooner you act, the smaller the damage.',
         'Want us to review your site? We offer a quick security check for local businesses.'
-      ] },
-    { id: 'plan-mobile-app-two-weeks', cat: 'Mobile apps', date: '06 Oct 2026', read: '5 min read',
+      ]
+    },
+    {
+      id: 'plan-mobile-app-two-weeks', cat: 'Mobile apps', date: '06 Oct 2026', read: '5 min read',
       title: 'How we plan a mobile app in two weeks',
       summary: 'A clear plan before coding saves time, money and surprises.',
       img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=70',
@@ -222,8 +229,10 @@
         'h:What you receive',
         'l:A simple screen-by-screen design|A feature list split into "now" and "later"|A clear timeline and price',
         'After that, development starts in small steps and you see progress every week.'
-      ] },
-    { id: 'flutter-vs-native', cat: 'Mobile apps', date: '30 Sep 2026', read: '4 min read',
+      ]
+    },
+    {
+      id: 'flutter-vs-native', cat: 'Mobile apps', date: '30 Sep 2026', read: '4 min read',
       title: 'Choosing between Flutter and native apps',
       summary: 'One codebase or two? A plain comparison to help you decide.',
       img: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=70',
@@ -236,7 +245,8 @@
         'h:Our advice',
         'For most local businesses, such as shops, schools and delivery services, Flutter is the faster and cheaper choice and the result feels smooth to users.',
         'Not sure which one fits your idea? Tell us about it and we will recommend the right path.'
-      ] }
+      ]
+    }
   ];
 
   const bd = $('blogDetail');
@@ -255,8 +265,8 @@
     $('blogMeta').innerHTML = '<span><i class="fa-regular fa-calendar me-1"></i>' + p.date + '</span><span><i class="fa-regular fa-clock me-1"></i>' + p.read + '</span><span><i class="fa-solid fa-tag me-1"></i>' + p.cat + '</span>';
     $('blogBody').innerHTML = p.body.map(t =>
       t.startsWith('h:') ? '<h3>' + t.slice(2) + '</h3>' :
-      t.startsWith('l:') ? '<ul>' + t.slice(2).split('|').map(x => '<li>' + x + '</li>').join('') + '</ul>' :
-      '<p>' + t + '</p>').join('');
+        t.startsWith('l:') ? '<ul>' + t.slice(2).split('|').map(x => '<li>' + x + '</li>').join('') + '</ul>' :
+          '<p>' + t + '</p>').join('');
     const prev = POSTS[i + 1], next = POSTS[i - 1];
     $('blogNav').innerHTML =
       (prev ? '<a class="btn btn-ghost" href="' + link(prev) + '"><i class="fa-solid fa-arrow-left me-2"></i>Older article</a>' : '<span></span>') +

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Offers | NextBarisal</title>
   <meta name="description"
-    content="Special offers on websites, CCTV cameras, software and reconditioned laptops from NextBarisal.">
+    content="Special offers on websites, CCTV cameras, software, IT training and reconditioned laptops from NextBarisal.">
   <link rel="icon" type="image/jpeg" href="assets/img/nextbarisal-fabicon.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
@@ -37,6 +37,8 @@
                   class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="gallery.html"><i
                   class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html"><i
+                  class="fa-solid fa-newspaper me-2 d-lg-none"></i>Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html"><i
                   class="fa-solid fa-circle-info me-2 d-lg-none"></i>About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html"><i
@@ -47,7 +49,6 @@
       <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0">
         <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i
             class="fa-solid fa-moon"></i></button>
-        <button class="btn btn-plain btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
         <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"
           aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
       </div>
@@ -63,7 +64,7 @@
       </ol>
       <span class="chip c-red">Special offers</span>
       <h1>Limited-time offers for your business</h1>
-      <p>Website, CCTV camera, software and reconditioned laptop packages at special prices.</p>
+      <p>Website, CCTV camera, software, IT training and reconditioned laptop packages at special prices.</p>
     </div>
   </header>
 
@@ -71,7 +72,7 @@
     <div class="container">
       <div class="note-bar"><i class="fa-solid fa-hourglass-half"></i><span>All offers end on <b>30 November 2026</b>.
           Contact us early to lock in the price.</span></div>
-      <div class="row g-4 offer-grid">
+      <div class="row g-4 offer-grid justify-content-center">
         <div class="col-md-6 col-xl-3">
           <article class="offer s-red">
             <span class="off-badge">40% OFF</span>
@@ -131,6 +132,21 @@
               <li><i class="fa-solid fa-check"></i>Help and support from our team</li>
             </ul>
             <a href="contact.html?service=Reconditioned%20laptop%20sale" class="btn btn-offer w-100">Get this offer</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <article class="offer s-yellow">
+            <span class="off-badge">New batch</span>
+            <i class="fa-solid fa-user-graduate o-ico"></i>
+            <h3>IT training</h3>
+            <div class="price"><s></s><b>Ask for price</b></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i>Web design and Laravel basics</li>
+              <li><i class="fa-solid fa-check"></i>Practice on real projects</li>
+              <li><i class="fa-solid fa-check"></i>Small batch with mentor support</li>
+              <li><i class="fa-solid fa-check"></i>Certificate after completion</li>
+            </ul>
+            <a href="contact.html?service=IT%20training" class="btn btn-offer w-100">Get this offer</a>
           </article>
         </div>
 
@@ -206,6 +222,7 @@
             <li><a href="offers.html">Offers</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -241,27 +258,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="loginTitle">Login to NextBarisal</h2><button type="button" class="btn-close"
-            data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form id="loginForm" class="modal-body" novalidate>
-          <div class="mb-3"><label class="form-label" for="lEmail">Email</label><input type="email" id="lEmail"
-              class="form-control" placeholder="you@example.com" required></div>
-          <div class="mb-3"><label class="form-label" for="lPass">Password</label><input type="password" id="lPass"
-              class="form-control" placeholder="Your password" required></div>
-          <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="lRem"><label
-              class="form-check-label" for="lRem">Remember me</label></div>
-          <button class="btn btn-nb w-100">Login</button>
-          <div id="loginMsg" class="mt-3 small"></div>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>

@@ -140,13 +140,6 @@ h3 {
    transform: scale(1)
 }
 
-.hero-bg::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   background: linear-gradient(90deg, #0c0e12f0 0, #0c0e12b8 45%, #0c0e1255 100%)
-}
-
 #home .carousel-item.active .hero-bg {
    animation: heroZoom 7s ease-out forwards
 }
@@ -1803,11 +1796,6 @@ a.info-card:hover {
    font-weight: 600
 }
 
-/* login button: plain text, normal weight */
-.btn-login {
-   font-weight: 400
-}
-
 /* blog cards are clickable */
 .proj {
    position: relative
@@ -1899,4 +1887,24 @@ a.info-card:hover {
 
 [data-bs-theme="dark"] .logo-light {
    display: none
+}
+/* stats now sit right under the hero */
+.stats.top {
+   padding: 4rem 0 0
+}
+
+/* Trustable Client: square tiles with rounded corners, logo only */
+.client-logo {
+   flex: 0 0 auto;
+   display: grid;
+   place-items: center;
+   width: 112px;
+   height: 112px;
+   background: #fff;
+   border-radius: 20px
+}
+
+.client-logo img {
+   width: 64px;
+   height: 64px
 }

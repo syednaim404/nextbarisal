@@ -37,6 +37,8 @@
                   class="fa-solid fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="gallery.html"><i
                   class="fa-solid fa-images me-2 d-lg-none"></i>Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html"><i
+                  class="fa-solid fa-newspaper me-2 d-lg-none"></i>Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html"><i
                   class="fa-solid fa-circle-info me-2 d-lg-none"></i>About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html"><i
@@ -47,7 +49,6 @@
       <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0">
         <button id="themeBtn" class="btn btn-plain" aria-label="Toggle dark and light mode"><i
             class="fa-solid fa-moon"></i></button>
-        <button class="btn btn-plain btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
         <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"
           aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
       </div>
@@ -77,32 +78,14 @@
       <div class="row g-4 justify-content-center">
         <div class="col-md-6 col-lg-4">
           <article class="card-nb s-red"><i class="fa-solid fa-globe"></i>
-            <h3><a href="service-details.html?id=web-applications" class="stretched-link">Web applications</a></h3>
-            <p>Secure Laravel and PHP platforms with admin panels, roles and REST APIs.</p>
+            <h3><a href="service-details.html?id=website" class="stretched-link">Website</a></h3>
+            <p>Business, school, shop and portfolio websites with an admin panel, built on Laravel and PHP.</p>
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-blue"><i class="fa-solid fa-cart-shopping"></i>
-            <h3><a href="service-details.html?id=e-commerce" class="stretched-link">E-commerce</a></h3>
-            <p>Online shops with bKash, Nagad and card payments plus courier tracking.</p>
-          </article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-green"><i class="fa-solid fa-mobile-screen-button"></i>
-            <h3><a href="service-details.html?id=mobile-apps" class="stretched-link">Mobile apps</a></h3>
-            <p>Flutter and native apps for Android and iOS, with offline support.</p>
-          </article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-purple"><i class="fa-solid fa-video"></i>
-            <h3><a href="service-details.html?id=cctv-camera-setup" class="stretched-link">CCTV camera setup</a></h3>
-            <p>HD cameras with night vision, a DVR and live view on your phone, installed and set up for you.</p>
-          </article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-red"><i class="fa-solid fa-server"></i>
-            <h3><a href="service-details.html?id=domain-hosting" class="stretched-link">Domain &amp; hosting</a></h3>
-            <p>Domain registration, fast web hosting, SSL and email setup for your website.</p>
+          <article class="card-nb s-blue"><i class="fa-solid fa-laptop-code"></i>
+            <h3><a href="service-details.html?id=software" class="stretched-link">Software</a></h3>
+            <p>Custom software for billing, school, hospital, inventory and more, made to fit how your business works.</p>
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -112,22 +95,21 @@
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-red"><i class="fa-solid fa-laptop"></i>
-            <h3><a href="service-details.html?id=reconditioned-laptop-sale" class="stretched-link">Reconditioned laptop
-                sale</a></h3>
-            <p>Tested and refurbished laptops for office, study and home use at friendly prices.</p>
+          <article class="card-nb s-purple"><i class="fa-solid fa-video"></i>
+            <h3><a href="service-details.html?id=cctv-camera-setup" class="stretched-link">CCTV camera</a></h3>
+            <p>HD cameras with night vision, a DVR and live view on your phone, installed and set up for you.</p>
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-blue"><i class="fa-brands fa-facebook"></i>
-            <h3><a href="service-details.html?id=facebook-ads" class="stretched-link">Facebook ads</a></h3>
-            <p>Targeted Facebook and Instagram ad campaigns that bring local customers to your page and shop.</p>
+          <article class="card-nb s-green"><i class="fa-solid fa-server"></i>
+            <h3><a href="service-details.html?id=domain-hosting" class="stretched-link">Domain &amp; hosting</a></h3>
+            <p>Domain registration, fast web hosting, SSL and email setup for your website.</p>
           </article>
         </div>
         <div class="col-md-6 col-lg-4">
-          <article class="card-nb s-green"><i class="fa-solid fa-user-graduate"></i>
-            <h3><a href="service-details.html?id=internship" class="stretched-link">Internship</a></h3>
-            <p>Hands-on training in web development and design for students, working on real projects.</p>
+          <article class="card-nb s-teal"><i class="fa-solid fa-user-graduate"></i>
+            <h3><a href="service-details.html?id=it-training" class="stretched-link">IT training</a></h3>
+            <p>Hands-on IT training in web development, design and computer skills, working on real projects.</p>
           </article>
         </div>
       </div>
@@ -169,38 +151,7 @@
     </div>
   </section>
 
-  <section id="stack" class="py-5">
-    <div class="container">
-      <div class="head text-center mb-4">
-        <h2>Tools we use</h2>
-      </div>
-    </div>
-    <div class="marquee" data-speed="45">
-      <div class="track">
-        <div class="tool"><i class="fa-brands fa-laravel" style="color:#ff2d20"></i><span>Laravel</span></div>
-        <div class="tool"><i class="fa-brands fa-php" style="color:#8892bf"></i><span>PHP</span></div>
-        <div class="tool"><i class="fa-brands fa-js" style="color:#f7df1e"></i><span>JavaScript</span></div>
-        <div class="tool"><i class="fa-brands fa-react" style="color:#61dafb"></i><span>React</span></div>
-        <div class="tool"><i class="fa-brands fa-vuejs" style="color:#42b883"></i><span>Vue.js</span></div>
-        <div class="tool"><i class="fa-brands fa-node-js" style="color:#68a063"></i><span>Node.js</span></div>
-        <div class="tool"><i class="fa-brands fa-python" style="color:#4b8bbe"></i><span>Python</span></div>
-        <div class="tool"><i class="fa-brands fa-java" style="color:#f89820"></i><span>Java</span></div>
-        <div class="tool"><i class="fa-brands fa-angular" style="color:#dd0031"></i><span>Angular</span></div>
-        <div class="tool"><i class="fa-brands fa-html5" style="color:#e34f26"></i><span>HTML5</span></div>
-        <div class="tool"><i class="fa-brands fa-css3-alt" style="color:#2d9cdb"></i><span>CSS3</span></div>
-        <div class="tool"><i class="fa-brands fa-sass" style="color:#cc6699"></i><span>Sass</span></div>
-        <div class="tool"><i class="fa-brands fa-bootstrap" style="color:#a46bf5"></i><span>Bootstrap</span></div>
-        <div class="tool"><i class="fa-solid fa-database" style="color:#00a3e0"></i><span>MySQL</span></div>
-        <div class="tool"><i class="fa-brands fa-git-alt" style="color:#f05032"></i><span>Git</span></div>
-        <div class="tool"><i class="fa-brands fa-docker" style="color:#2496ed"></i><span>Docker</span></div>
-        <div class="tool"><i class="fa-brands fa-aws" style="color:#ff9900"></i><span>AWS</span></div>
-        <div class="tool"><i class="fa-brands fa-android" style="color:#3ddc84"></i><span>Android</span></div>
-        <div class="tool"><i class="fa-brands fa-wordpress" style="color:#3aa0d6"></i><span>WordPress</span></div>
-        <div class="tool"><i class="fa-brands fa-figma" style="color:#f24e1e"></i><span>Figma</span></div>
-        <div class="tool"><i class="fa-brands fa-linux" style="color:#fcc624"></i><span>Linux</span></div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- CALL TO ACTION -->
   <section class="cta-band">
@@ -241,6 +192,7 @@
             <li><a href="offers.html">Offers</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -276,27 +228,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="loginTitle">Login to NextBarisal</h2><button type="button" class="btn-close"
-            data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form id="loginForm" class="modal-body" novalidate>
-          <div class="mb-3"><label class="form-label" for="lEmail">Email</label><input type="email" id="lEmail"
-              class="form-control" placeholder="you@example.com" required></div>
-          <div class="mb-3"><label class="form-label" for="lPass">Password</label><input type="password" id="lPass"
-              class="form-control" placeholder="Your password" required></div>
-          <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="lRem"><label
-              class="form-check-label" for="lRem">Remember me</label></div>
-          <button class="btn btn-nb w-100">Login</button>
-          <div id="loginMsg" class="mt-3 small"></div>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
